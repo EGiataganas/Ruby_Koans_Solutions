@@ -152,7 +152,7 @@ EOS
 
   in_ruby_version("1.8") do
     def test_in_older_ruby_single_characters_are_represented_by_integers
-      assert_equal __, ?a
+      assert_equal "a", ?a
       assert_equal __, ?a == 97
 
       assert_equal __, ?b == (?a + 1)
@@ -169,7 +169,7 @@ EOS
   def test_strings_can_be_split
     string = "Sausage Egg Cheese"
     words = string.split
-    assert_equal [__, __, __], words
+    assert_equal ["Sausage", "Egg", "Cheese"], words
   end
 
   def test_strings_can_be_split_with_different_patterns
