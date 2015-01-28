@@ -23,8 +23,8 @@ class AboutOpenClasses < Neo::Koan
 
   def test_after_reopening_dogs_can_both_wag_and_bark
     fido = Dog.new
-    assert_equal "WOOF", fido.wag
-    assert_equal "HAPPY", fido.bark
+    assert_equal "HAPPY", fido.wag
+    assert_equal "WOOF", fido.bark
   end
 
   # ------------------------------------------------------------------
